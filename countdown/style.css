@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: url(https://img.freepik.com/free-vector/realistic-birthday-greeting-background_23-2150997419.jpg);
+  background-size: cover;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	font-family: 'Space Mono', monospace;
+}
+
+.unit {
+	color: rgba(0, 0, 0, 0.9);
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 0.125rem;
+	padding: 2rem;
+	text-align: center;
+	
+	&:before {
+		color: rgba(0, 0, 0, 0.9);
+		font-size: 7.25rem;
+		content: attr(data-content);
+		display: block;
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+}
+
+@media all and (max-width: 320px) {
+   body {
+      background: #e7e7e7;
+   }
+}
+
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+    #wrapper{ width: 100%;}
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px){
+    #content{ width: 100%; float: none;}
+    #sidebar { width: 100%;float: none; padding-left: 0px;}
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px){
+     #content{ width: 100%; float: none;}
+    #sidebar { width: 100%;float: none; padding-left: 0px;}
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px){
+     #content{ width: 100%; float: none;}
+    #sidebar { width: 100%;float: none; padding-left: 0px;}
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px){
+     #content{ width: 100%; float: none;}
+    #sidebar { width: 100%;float: none; padding-left: 0px;}
+}
+
