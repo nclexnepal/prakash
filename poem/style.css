@@ -95,7 +95,7 @@ p {
 	color: #fff;
 }
 span {
-	color: red;
+	color: rgb(121, 41, 196);
 }
 .front {
 	transform: translateZ(435px);
